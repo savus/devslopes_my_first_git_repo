@@ -1,4 +1,4 @@
-
+Instructions For Git Syntax
 
 touch <name> creates new file (include extension) 
 rm <name> removes file
