@@ -1,0 +1,58 @@
+
+
+touch <name> creates new file (include extension) 
+rm <name> removes file
+mv <filename> <directory name> - moves file to stated directory
+mkdir <name> - create directory
+rmdir <name> - remove empty directory
+rm --cached <name> remove un-empty directory
+cd change directory
+/c/ check directory
+ls list contents within directory
+cd . .  back out one directory folder
+git innit - establishes new repo
+git status - lists out staging levels of all repo elements
+git add - moves file to staging area
+git restore --staged <name> - moves file out of staging area
+git commit - moves to commit-message screen
+i - toggles commit message edit mode
+:w - commits changes
+:q - exit commit-message screen
+:wq - commits changes and exits 
+vi .gitignore - changes to .gitignore edit screen - type full file name (/directory name),
+add # -.gitignore below all file listings
+git log - brings up commit history
+git log --oneline - brings up simplified commit history
+git remote add origin <github.com repository file path> - connects a github repository with your local repository
+git remote -v - displays remote connected repository list  
+git remote rm origin - removes remote repository
+git push origin <branch name> - pushes code from the specified branch to the remote repository
+git checkout origin/master - displays current pull data
+git fetch - pull all current information from remote repo
+git checkout <name> - switch branch to <name>
+git merge origin/master - merge changes made to remote repo
+git pull origin master - combine remote changes with local repo 
+git clone <repository address> - clones a remote repository from github
+git branch - returns the current branch being worked on, noted by an *
+git branch -a - returns all branches in repository, current branch noted by an *
+git branch <new branch name> creates a new branch with assigned name
+git branch -v returns list of branches and details what commits they are associated with
+git checkout <name> switches current branch to given branch name
+git checkout -b <name> switches current branch to given branch name;
+if given name does not exist, creates a new branch with given name, then
+switches to it
+git merge <branch name> - merges named branch with currently checkedout branch
+
+____RESOLVING MERGE CONFLICTS____
+On branch that you want to have the final result, type "vi <conflicting file name>" 
+you'll see formatting between the conflicting files
+<<<<<<<<HEAD
+Hello World!
+============
+Hello World.
+conflicting_merge_files>>>>>>>
+
+delete the extra formating, and make sure only the changes remain that you want
+, then save and quit, then add and commit. You will see a "merge conflict commit" 
+message, save and quit, and the merge conflict will be resolved with additional
+infomation in the git log.
