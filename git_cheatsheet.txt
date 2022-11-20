@@ -37,6 +37,8 @@ git branch - returns the current branch being worked on, noted by an *
 git branch -a - returns all branches in repository, current branch noted by an *
 git branch <new branch name> creates a new branch with assigned name
 git branch -v returns list of branches and details what commits they are associated with
+git branch -d <local_branch_name> - deletes branch locally
+git push origin --delete <remote_branch_name> - deletes branch remotely
 git checkout <name> switches current branch to given branch name
 git checkout -b <name> switches current branch to given branch name;
 if given name does not exist, creates a new branch with given name, then
