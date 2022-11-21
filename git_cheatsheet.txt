@@ -67,3 +67,5 @@ git stash show -p - returns lines of code that were changed in last stashed file
 git stash show -p stash@{index} - returns lines of code that were changed in files of specified index
 git stash pop - take changes from {0} index stash and apply to current branch
 git stash pop stash@{index} - take changes from {index} stash and apply to current branch
+git stash drop stash@{index} - delete stashed changes from {index} stash
+git stash clear - deletes all items in the stash list
