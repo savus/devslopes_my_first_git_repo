@@ -60,4 +60,8 @@ message, save and quit, and the merge conflict will be resolved with additional
 infomation in the git log.
 
 git stash - temporarily saves un-committed information incase of emergency edits needed for current project; to be retrieved later
-git stash list - returns list of temporarily stashed inventory
+git stash list - returns list of temporarily stashed inventory {last-out first-in}
+git stash show - returns list of changes to last stashed files
+git stash show stash@{index} - returns list of changes to files of specified index
+git stash show -p - returns lines of code that were changed in last stashed files
+git stash show -p stash@{index} - returns lines of code that were changed in files of specified index
