@@ -58,3 +58,6 @@ delete the extra formating, and make sure only the changes remain that you want
 , then save and quit, then add and commit. You will see a "merge conflict commit" 
 message, save and quit, and the merge conflict will be resolved with additional
 infomation in the git log.
+
+git stash - temporarily saves un-committed information incase of emergency edits needed for current project; to be retrieved later
+git stash list - returns list of temporarily stashed inventory
