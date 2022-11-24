@@ -10,7 +10,7 @@ cd change directory
 /c/ check directory
 ls list contents within directory
 cd . .  back out one directory folder
-git innit - establishes new repo
+git init - establishes new repo
 git status - lists out staging levels of all repo elements
 git add - moves file to staging area
 git restore --staged <name> - moves file out of staging area
@@ -69,3 +69,21 @@ git stash pop - take changes from {0} index stash and apply to current branch
 git stash pop stash@{index} - take changes from {index} stash and apply to current branch
 git stash drop stash@{index} - delete stashed changes from {index} stash
 git stash clear - deletes all items in the stash list
+
+git diff {hash_1} {hash_2} returns changes made during both commits
+git revert {hash} inverts changes made to specified commit using {hash} as a reference
+without deleting commit history
+git reset --soft {hash} reverts to changes made during {hash} commit and puts all
+subsequent commits into staging area
+git 
+git reset --mixed {hash} - directs the MAIN and HEAD to the {hash} commit, and puts
+all subsequent commits into the staging area so that you can make changes to a previous 
+commit without affecting changes made to other files
+git reset --hard {hash} directs the MAIN and HEAD to the {hash} commit, and clears
+the staging area and working directory of all files, working directory files are kept as is
+git rm <file name> - deletes file name and puts it in the staging area, requires
+commit of file deletion
+git commit --amend - brings up previous commit message to be edited.
+changes commit hash, date, and time. Includes any newly staged finles
+to 'changes to be commited' list.
+git reflog - returns a history log list of where the tips of branches/working directory has pointed to 
